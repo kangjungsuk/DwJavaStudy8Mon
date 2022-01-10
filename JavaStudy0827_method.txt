@@ -1,0 +1,53 @@
+package JavaStudy;
+
+import java.util.Scanner;
+
+public class JavaStudy0827_1 {
+
+	public static void main(String[] args) {
+	
+	
+ 
+		
+		Person kang =new Person();
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
+		kang.n();
+		kang.a();
+		int change = kang.p(2);
+		System.out.println("학생의 휴대폰 교환 횟수는 : " + change);
+	
+	}
+}	
+		
+	class Person{
+			
+			String name = "강정석";
+			int age = 32 ; 
+			String phonNumber = "01064889546";
+			
+			
+			void n() 
+			{
+				System.out.println("학생의 이름은 : "+ name );
+			}
+			void a() 
+			{
+				System.out.println("학생의 나이는 : "+age );
+			}
+			int p(int ea) 
+			{
+				System.out.println("학생의 휴대폰 번호는 : " + phonNumber );
+				System.out.println("학생의 휴대폰 갯수는 : " +  ea );
+				return 5 ; 
+			}
+			
+			
+			
+		}
+		
+	
+	
+

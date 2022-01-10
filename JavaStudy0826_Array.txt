@@ -1,0 +1,75 @@
+package HelloJava;
+
+import java.util.Scanner;
+
+public class JavaStudy0822_1 {
+
+	public static void main(String[] args) {
+	
+	Scanner sc = new Scanner(System.in);
+    int Student =5;
+    int kor[]= new int[Student];
+    int eng[]= new int[Student];
+    int mat[]= new int[Student];
+    int tot[]= new int[Student];
+    int avg[]= new int[Student];
+    
+    
+    int select = 0;
+    
+    	while(true) 
+    	{
+    		  System.out.println("1.입력");
+    		  System.out.println("2.출력");
+    		  System.out.println("3.종료");
+    		  select = sc.nextInt();
+    		  
+    		  if(select == 1)
+    		  {
+    			  	for(int i =1; i<=Student;i++) 
+    			    {
+    		              	System.out.println(i+"번째 국어입력" );
+    		              	kor [i-1] = sc.nextInt();
+    		              	System.out.println(i+"번째 영어입력" );
+    			  	eng [i-1] = sc.nextInt();
+    	    		  	System.out.println(i+"번째 수학입력" );
+    	    		  	mat [i-1] = sc.nextInt();
+    	    		  
+    	    		 	tot [i-1] =kor [i-1]+ eng [i-1]+mat [i-1];
+    	    		  	avg [i-1] =tot [i-1]/3;
+    			    }
+    			  
+    		  }
+    		  
+    		  if(select == 2) 
+    		  {
+    			  	for(int i = 1; i<= Student;i++) 
+    			  	{
+    				 System.out.println(i+"번째 국어 점수 ="+ kor [i-1]);
+    				 System.out.println(i+"번째 영서 점수 ="+ eng [i-1] );
+   				     System.out.println(i+"번째 수학 점수 ="+ mat [i-1]);
+   				     System.out.println(i+"번째 총점 ="+tot [i-1] );
+  				     System.out.println(i+"평균 ="  +avg [i-1] );
+   	    		  
+    			  	}
+    		  }
+    		  
+    		  if(select == 3) 
+    		  {
+    			  System.out.println("끝");
+    			  break;
+    		  }
+    	}
+	}
+}
+    		
+    	
+    	
+	
+	
+	
+	
+	
+
+
+
